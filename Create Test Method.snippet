@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Author>Ernesto Medina</Author>
+      <Description>Creates a basic NUnit test</Description>
+      <Shortcut>tddd</Shortcut>
+      <Title>Create Test Method</Title>
+    </Header>
+   <Snippet>
+      <Imports>
+        <Import>
+          <Namespace>NUnit.Framework.TestAttribute</Namespace>
+        </Import>
+      </Imports>
+      <References>
+        <Reference>
+          <Assembly>nunit.framework.dll</Assembly>
+        </Reference>
+      </References>
+	  <Declarations>
+        <Literal>
+          <ID>Should</ID>
+          <ToolTip>Describe the unit that will be tested.</ToolTip>
+          <Default>Should</Default>
+        </Literal>
+		<Literal Editable="false">
+		  <ID>Test</ID>
+			<Function>SimpleTypeName(global::NUnit.Framework.TestAttribute)</Function>
+		  </Literal>
+      </Declarations>
+      <Code Language="CSharp"><![CDATA[[$Test$]
+        public void $Should$()
+        {
+            
+        }]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
